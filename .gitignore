@@ -1,3 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg
+
+# Runtime cache and data directories
 cache_dir/
-data
-models
+data/
+*.pickle
+
+# Model files (large binary files - user-specific trained models)
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.h5
+models/*.ckpt
+models/*.pb
+models/*.tflite
+
+# Keep model config files (yaml, etc.) but ignore weights
+!models/*.yaml
+!models/*.yml
+!models/README.md
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Label Studio specific
+config.json
